@@ -1,6 +1,7 @@
+<meta charset="utf-8" />
 <?php
  
-$sendto   = "smart-landing@yandex.ru"; // почта, на которую будет приходить письмо
+$sendto   = "kapahdalli88@gmail.com"; // почта, на которую будет приходить письмо
 $username = $_POST['name'];   // сохраняем в переменную данные полученные из поля c именем
 $usertel = $_POST['telephone']; // сохраняем в переменную данные полученные из поля c телефонным номером
 $usermail = $_POST['email']; // сохраняем в переменную данные полученные из поля c адресом электронной почты
@@ -22,9 +23,11 @@ $msg .= "</body></html>";
  
 // отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
-    echo "<center><img src='images/spasibo.png'></center>";
+    echo "<center><img src='images/thx.png'></center>";
+    
 } else {
-    echo "<center><img src='images/ne-tpravleno.png'></center>";
+    echo "<center><img src='images/error_header.jpg'></center>";
+    echo '<p>Что то пошло не так, попробуйте ввести данные <a href="https://moskit-dovislive.c9users.io">снова</a></p>'; 
 }
  
 ?>
