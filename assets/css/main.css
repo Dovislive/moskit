@@ -2475,12 +2475,13 @@
 /* Banner */
 
 	#banner {
-		background-image: url("../../images/banner12.jpg");
+		background-image: url("../../images/banner-last.jpg");
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
 		text-align: center;
 		position: relative;
+		margin: 25px;
 	}
 
 		#banner header {
@@ -3224,3 +3225,9 @@
     .applicationButton:hover {
         background: #d68c18;
     }
+
+.boxes {
+	text-align: left;
+	padding: 6px;
+	
+}
